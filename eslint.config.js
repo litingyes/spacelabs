@@ -8,5 +8,5 @@ const compat = new FlatCompat()
 
 // @ts-expect-error type error
 export default await antfu({
-  ...compat.extends('plugin:tailwindcss/recommended'),
+  ...compat.extends('plugin:tailwindcss/recommended', 'next/core-web-vitals'),
 })
