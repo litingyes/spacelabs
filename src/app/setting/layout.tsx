@@ -7,13 +7,13 @@ export default function SettingLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex">
-      <Listbox className="w-64" aria-label="settings">
+    <div className="flex h-full">
+      <Listbox className="w-64 overflow-auto" aria-label="settings">
         <ListboxItem key="profile" href="/setting/profile" shouldHighlightOnFocus>
           Profile
         </ListboxItem>
       </Listbox>
-      <div className="flex-1">
+      <div className="flex-1 overflow-auto">
         {children}
       </div>
     </div>
