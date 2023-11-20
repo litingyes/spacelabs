@@ -5,10 +5,10 @@ const nextConfig = {
       {
         source: '/setting',
         destination: '/setting/profile',
-        permanent: true
-      }
+        permanent: true,
+      },
     ]
-  }
+  },
 }
 
 module.exports = nextConfig

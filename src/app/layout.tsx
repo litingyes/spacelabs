@@ -21,7 +21,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <Providers>
-            <main className='w-screen h-screen overflow-auto'>
+            <main className="h-screen w-screen overflow-auto">
               {children}
             </main>
           </Providers>
