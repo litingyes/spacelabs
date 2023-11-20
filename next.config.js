@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+export default {
   async redirects() {
     return [
       {
@@ -10,5 +10,3 @@ const nextConfig = {
     ]
   },
 }
-
-module.exports = nextConfig
