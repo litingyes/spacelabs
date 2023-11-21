@@ -12,6 +12,9 @@ export default function SettingLayout({
         <ListboxItem key="profile" href="/setting/profile" shouldHighlightOnFocus>
           Profile
         </ListboxItem>
+        <ListboxItem key="system" href="/setting/system" shouldHighlightOnFocus>
+          System
+        </ListboxItem>
       </Listbox>
       <div className="flex-1 overflow-auto">
         {children}
