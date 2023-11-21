@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Inter } from 'next/font/google'
 import { Providers } from './providers'
-import { ThemeProvider } from '@/components/ThemeProvider'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,11 +21,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <Providers>
-            <ThemeProvider>
-              <main className="h-screen w-screen overflow-auto text-foreground bg-background">
-                {children}
-              </main>
-            </ThemeProvider>
+            <main className="h-screen w-screen overflow-auto text-foreground bg-background">
+              {children}
+            </main>
           </Providers>
         </body>
       </html>
