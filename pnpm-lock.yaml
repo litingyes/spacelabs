@@ -43,6 +43,9 @@ devDependencies:
   '@eslint/eslintrc':
     specifier: ^2.1.3
     version: 2.1.3
+  '@react-types/shared':
+    specifier: ^3.22.0
+    version: 3.22.0(react@18.2.0)
   '@types/node':
     specifier: ^20
     version: 20.9.2
@@ -2896,7 +2899,6 @@ packages:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
       react: 18.2.0
-    dev: false
 
   /@react-types/slider@3.7.0(react@18.2.0):
     resolution: {integrity: sha512-uyQXUVFfqc9SPUW0LZLMan2n232F/OflRafiHXz9viLFa9tVOupVa7GhASRAoHojwkjoJ1LjFlPih7g5dOZ0/Q==}
@@ -6745,7 +6747,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

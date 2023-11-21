@@ -1,5 +1,6 @@
 'use client'
 
+import type { Key } from '@react-types/shared'
 import { Card, CardBody, CardHeader, Select, SelectItem } from '@nextui-org/react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
@@ -7,9 +8,9 @@ import { useEffect, useState } from 'react'
 export default function Page() {
   const { theme, themes, setTheme } = useTheme()
 
-  const [selectedKeys, setSelectedKeys] = useState(new Set())
+  const [selectedKeys, setSelectedKeys] = useState<Iterable<Key>>(new Set())
   useEffect(() => {
-    setSelectedKeys(new Set([theme]))
+    setSelectedKeys(new Set([theme!]))
   }, [])
 
   return (
