@@ -1,7 +1,8 @@
 'use client'
 
 import type { Key } from '@react-types/shared'
-import { Card, CardBody, CardHeader, Select, SelectItem } from '@nextui-org/react'
+import { Card, CardBody, CardHeader } from '@nextui-org/card'
+import { Select, SelectItem } from '@nextui-org/select'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 

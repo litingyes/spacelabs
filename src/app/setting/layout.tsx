@@ -1,5 +1,5 @@
 'use client'
-import { Listbox, ListboxItem } from '@nextui-org/react'
+import { Listbox, ListboxItem } from '@nextui-org/listbox'
 
 export default function SettingLayout({
   children,
