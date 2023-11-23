@@ -14,7 +14,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const [isDark, setIsDark] = useState(false)
 
   useMutationObserver(() => {
-    if (document.documentElement.classList.contains('dark'))
+    if (document?.documentElement.classList.contains('dark'))
       setIsDark(true)
     else
       setIsDark(false)
