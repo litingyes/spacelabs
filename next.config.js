@@ -4,7 +4,7 @@ export default {
     return [
       {
         source: '/setting',
-        destination: '/setting/profile',
+        destination: '/setting/system',
         permanent: true,
       },
     ]
