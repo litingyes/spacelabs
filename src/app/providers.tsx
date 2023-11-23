@@ -13,18 +13,18 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   const [isDark, setIsDark] = useState(false)
 
+  useMount(() => {
+    if (!document?.documentElement.classList.contains('dark'))
+      setIsDark(false)
+  })
+
   useMutationObserver(() => {
     if (document?.documentElement.classList.contains('dark'))
       setIsDark(true)
     else
       setIsDark(false)
-  }, document.documentElement, {
+  }, () => document?.documentElement, {
     attributeFilter: ['class'],
-  })
-
-  useMount(() => {
-    if (!document.documentElement.classList.contains('dark'))
-      setIsDark(false)
   })
 
   return (
