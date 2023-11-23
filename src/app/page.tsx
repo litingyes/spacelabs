@@ -2,7 +2,6 @@ import { Card, CardBody, CardFooter } from '@nextui-org/card'
 import { Image } from '@nextui-org/image'
 import NextImage from 'next/image'
 import Link from 'next/link'
-import { UserButton } from '@clerk/nextjs'
 import { apps } from './apps'
 
 export default function Home() {
@@ -20,14 +19,6 @@ export default function Home() {
           </Card>
         </Link>
       ))}
-      <Card className="w-24" shadow="none" isHoverable isPressable isBlurred>
-        <CardBody className="flex justify-center items-center">
-          <UserButton />
-        </CardBody>
-        <CardFooter className="flex justify-center items-center pt-0">
-          <span>Account</span>
-        </CardFooter>
-      </Card>
     </div>
   )
 }
