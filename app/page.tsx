@@ -1,8 +1,8 @@
 import { Card, CardBody, CardFooter } from '@nextui-org/card'
-import { Image } from '@nextui-org/image'
-import NextImage from 'next/image'
+import { Avatar } from '@nextui-org/avatar'
 import Link from 'next/link'
 import { apps } from './apps'
+import UserCard from '@/components/UserCard'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <Link key={app.path} href={app.path}>
           <Card className="w-24" shadow="none" isHoverable isPressable isBlurred>
             <CardBody className="flex justify-center items-center">
-              <Image as={NextImage} src={app.iconPath} alt={app.name} width={32} height={32} isZoomed />
+              <Avatar src={app.iconPath} name={app.name} />
             </CardBody>
             <CardFooter className="flex justify-center items-center pt-0">
               <span>{app.name}</span>
@@ -19,6 +19,7 @@ export default function Home() {
           </Card>
         </Link>
       ))}
+      <UserCard />
     </div>
   )
 }

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'A proving ground for tools',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
