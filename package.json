@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@nextui-org/react": "^2.2.9",
     "ahooks": "^3.7.8",
     "framer-motion": "^10.16.5",
