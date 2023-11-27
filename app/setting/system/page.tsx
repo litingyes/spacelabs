@@ -1,10 +1,10 @@
 'use client'
 
 import type { Key } from '@react-types/shared'
-import { Card, CardBody, CardHeader } from '@nextui-org/card'
 import { Select, SelectItem } from '@nextui-org/select'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import LayoutItem from '@/components/LayoutItem'
 
 export default function Page() {
   const [mounted, setMounted] = useState(false)
@@ -20,11 +20,9 @@ export default function Page() {
 
   return (
     <div>
-      <Card>
-        <CardHeader>
-          <label>Theme</label>
-        </CardHeader>
-        <CardBody>
+      <LayoutItem
+        label="Theme"
+        children={(
           <Select label="Select theme" defaultSelectedKeys={selectedKeys} onChange={e => setTheme(e.target.value)}>
             {
               themes.map(item => (
@@ -34,8 +32,8 @@ export default function Page() {
               ))
             }
           </Select>
-        </CardBody>
-      </Card>
+        )}
+      />
     </div>
   )
 }
