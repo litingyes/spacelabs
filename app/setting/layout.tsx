@@ -9,8 +9,11 @@ export default function SettingLayout({
   return (
     <div className="flex h-full">
       <Listbox className="w-64 overflow-auto" aria-label="settings">
-        <ListboxItem key="system" href="/setting/system" shouldHighlightOnFocus>
+        <ListboxItem key="system" href="/setting/system">
           System
+        </ListboxItem>
+        <ListboxItem key="profile" href="/setting/profile">
+          Profile
         </ListboxItem>
       </Listbox>
       <div className="flex-1 overflow-auto">
