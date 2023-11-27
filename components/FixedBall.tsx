@@ -6,6 +6,7 @@ import { useClickAway, useFocusWithin } from 'ahooks'
 import NextImage from 'next/image'
 import { useRef, useState } from 'react'
 import { Link } from '@nextui-org/react'
+import { HomeIcon } from '@heroicons/react/24/outline'
 
 export default function FixedBall() {
   const arrowSeparatePath = '/svg/arrowSeparate.svg'
@@ -35,13 +36,7 @@ export default function FixedBall() {
             <Card className="absolute -left-14 top-1 rounded-full">
               <CardBody>
                 <Link href="/">
-                  <Image
-                    as={NextImage}
-                    src="/svg/home.svg"
-                    width={24}
-                    height={24}
-                    alt="Fixed Ball"
-                  />
+                  <HomeIcon className="w-6 h-6 text-foreground" />
                 </Link>
               </CardBody>
             </Card>
