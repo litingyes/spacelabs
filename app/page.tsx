@@ -13,7 +13,7 @@ export default async function Home() {
         <Link key={app.path} href={app.path}>
           <Card as="div" className="w-24" shadow="none" isHoverable isPressable isBlurred>
             <CardBody className="flex justify-center items-center">
-              <Avatar src={app.iconPath} name={app.name} />
+              <Avatar className="bg-transparent" src={app.iconPath} name={app.name} />
             </CardBody>
             <CardFooter className="flex justify-center items-center pt-0">
               <span>{app.name}</span>
