@@ -26,7 +26,7 @@ export default function SettingLayout({
   const pathname = usePathname()
 
   return (
-    <div className="flex h-full gap-2">
+    <div className="flex h-full gap-6">
       <Listbox
         className="w-64 overflow-auto"
         aria-label="settings"
