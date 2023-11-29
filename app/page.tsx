@@ -1,10 +1,16 @@
 import { Card, CardBody, CardFooter } from '@nextui-org/card'
 import { Avatar } from '@nextui-org/avatar'
 import Link from 'next/link'
-import { Cog6ToothIcon } from '@heroicons/react/24/outline'
+import { Cog6ToothIcon, SwatchIcon } from '@heroicons/react/24/outline'
 import { auth } from '@/auth'
 
 const list = [
+  {
+    label: 'Color',
+    description: 'color tools',
+    path: '/app/color',
+    icon: <SwatchIcon className="w-10 h-10" />,
+  },
   {
     label: 'Setting',
     description: 'setting for space labs',
