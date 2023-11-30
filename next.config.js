@@ -13,6 +13,11 @@ export default {
         permanent: true,
       },
       {
+        source: '/app/color/theme',
+        destination: '/app/color/theme/play',
+        permanent: true,
+      },
+      {
         source: '/setting',
         destination: '/setting/system',
         permanent: true,
