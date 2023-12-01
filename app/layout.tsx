@@ -20,7 +20,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <main className="h-screen w-screen overflow-auto text-foreground bg-background p-8">
+          <main className="h-screen w-screen overflow-auto text-foreground bg-background p-4">
             {children}
             <FixedBall />
           </main>
