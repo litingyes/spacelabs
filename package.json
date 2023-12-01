@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@huggingface/agents": "^0.0.5",
+    "@huggingface/inference": "^2.6.4",
     "@nextui-org/react": "^2.2.9",
     "ahooks": "^3.7.8",
     "framer-motion": "^10.16.5",

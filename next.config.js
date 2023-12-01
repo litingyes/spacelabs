@@ -18,6 +18,11 @@ export default {
         permanent: true,
       },
       {
+        source: '/app/huggingface',
+        destination: '/app/huggingface/translate',
+        permanent: true,
+      },
+      {
         source: '/setting',
         destination: '/setting/system',
         permanent: true,

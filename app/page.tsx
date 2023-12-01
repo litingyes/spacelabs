@@ -1,6 +1,7 @@
 import { Card, CardBody, CardFooter } from '@nextui-org/card'
 import { Avatar } from '@nextui-org/avatar'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Cog6ToothIcon, SwatchIcon } from '@heroicons/react/24/outline'
 import { auth } from '@/auth'
 
@@ -10,6 +11,12 @@ const list = [
     description: 'color tools',
     path: '/app/color',
     icon: <SwatchIcon className="w-10 h-10" />,
+  },
+  {
+    label: 'Huggingface',
+    description: 'ai tools based on huggingface',
+    path: '/app/huggingface',
+    icon: <Image width={40} height={40} src="/svg/huggingface.svg" alt="huggingface" />,
   },
   {
     label: 'Setting',
