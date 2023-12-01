@@ -20,7 +20,7 @@ export default function Page() {
       <LayoutItem label="Theme Color Shades">
         <ul className="flex flex-col">
           {Object.entries(shades).map(([shade, color]) => (
-            <li className="flex items-center gap-4">
+            <li key={shade} className="flex items-center gap-4">
               <div className="w-10">{shade}</div>
               <div className="w-20">{color}</div>
               <div className="w-28 h-6" style={{ background: color }} />
